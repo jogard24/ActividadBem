@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* menu navegacion */
+/* Block: Header */
+.header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Element */
+.header__logo {
+  margin: 0;
+}
+
+.header__nav {
+  margin-top: 5px;
+}
+
+/* Element */
+.header__link {
+  color: #ccc;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* Modifier */
+.header__link--active {
+  font-weight: bold;
+  color: #fff;
+}
+/* ---------------------------- */
+/* Block: Hero */
+.hero {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Element */
+.hero__title {
+  margin: 0 0 10px;
+}
+
+.hero__text {
+  margin: 0;
+}
+/* ---------------------------------- */
+/* Block: Product List */
+.product-list {
+  padding: 20px;
+}
+
+/* Element */
+.product-list__item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Modifier */
+.product-list__item--featured {
+  border-color: #f90;
+  background: #fff8e1;
+}
+
+/* Element */
+.product-list__name {
+  margin: 0 0 5px;
+}
+
+.product-list__price {
+  margin: 0 0 10px;
+}
+
+.product-list__button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Block: Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Element */
+.footer__text {
+  margin: 0;
+}

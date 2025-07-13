@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- bloque -->
+    <nav class="menu">
+      <!-- elementos -->
+      <ul class="menu__list">
+        <!-- modificador -->
+        <li class="menu__item menu__item--active">
+          <!-- elementos -->
+          <a href="#" class="menu__link">inicio</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">servicios</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">otros</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <!-- bloque -->
+    <div class="tarjeta-producto">
+      <!-- elementos -->
+      <h2 class="tarjeta__titulo"> Tarjeta </h2>
+      <img class="tarjeta__img" src="fotografia.jpg" alt="ImagenDeTarjeta">
+      <div class="tarjeta__contenedor">
+        <p class="tarjeta__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <!-- modificador -->
+        <a href="#" class="tarjeta__button">Ver button</a>
+        <a href="#" class="tarjeta__button tarjeta__button--destacado">Modificador</a>
+      </div>
+    </div>
+    <form class="contact-form">
+      <!-- elementos -->
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="name">Nombre:</label>
+        <input class="contact-form__input" type="text" id="name" name="name">
+      </div>
+      <!-- elementos -->
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="email">Email:</label>
+        <input class="contact-form__input" type="email" id="email" name="email">
+      </div>
+      <!-- elementos -->
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="message">Mensaje:</label>
+        <textarea class="contact-form__textarea" id="message" name="message"></textarea>
+      </div>
+      <!-- modificador -->
+      <button class="contact-form__button contact-form__button--submit">Enviar</button>
+    </form>
+  <!-- bloque -->
+    <div class="lista">
+      <!-- elementos -->
+      <ul class="lista__tareas">
+        <h3 class="lista__titulo">Lista De Tareas Supr</h3>
+        <li class="lista__items">
+          <input type="checkbox" class="list__checkbox">
+          <span class="lista__opcion">C:\Windows\System32</span>
+          <!-- modificador -->
+          <button class="lista__delete-button">Eliminar</button>
+        </li>
+        <!-- modificador -->
+        <li class="lista__items  lista__items--completo">
+          <!-- elementos -->
+          <input type="checkbox" class="lista__checkbox"checked>
+          <span class="lista__opcion">Database</span>
+          <!-- modificador -->
+          <button class="lista__delete-button">Eliminar</button>
+        </li>
+      </ul>
+      <!-- elementos -->
+      <h3 class="lista__titulo">Informacion</h3>
+      <p class="lista__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste laudantium quae sint corrupti .</p>
+    </div>
+    <!-- bloque -->
+    <div class="galeria">
+      <!-- elementos -->
+      <h1 class="galeria__titulo">Galeria</h1>
+      <!-- elementos -->
+      <div class="galeria__fotos">
+        <img src="snake.jpg" class="galeria__img" alt="snake">
+      </div>
+      <div class="galeria__fotos2">
+        <img src="snake.jpg" class="galeria__img" alt="snake">
+      </div>
+    </div>
+<div class="alert alert--success"> <!-- Block + Modifier -->
+  <p class="alert__message">¡Operación exitosa!</p> <!-- Element -->
+</div>
+
+<div class="alert alert--error"> <!-- Block + Modifier -->
+  <p class="alert__message">Ocurrió un error.</p>
+</div>
+
+      
+<table class="data-table"> <!-- Block -->
+  <thead class="data-table__head"> <!-- Element -->
+    <tr class="data-table__row">
+      <th class="data-table__header">Nombre</th>
+      <th class="data-table__header">Edad</th>
+    </tr>
+  </thead>
+  <tbody class="data-table__body"> <!-- Element -->
+    <tr class="data-table__row data-table__row--highlighted"> <!-- Element + Modifier -->
+      <td class="data-table__cell">José</td>
+      <td class="data-table__cell">30</td>
+    </tr>
+    <tr class="data-table__row">
+      <td class="data-table__cell">Ana</td>
+      <td class="data-table__cell">25</td>
+    </tr>
+  </tbody>
+</table>
+
+<footer class="footer"> <!-- Block -->
+  <p class="footer__text">© 2025 Mi Sitio Web</p> <!-- Element -->
+  <a href="#" class="footer__link footer__link--important">Política de privacidad</a> <!-- Element + Modifier -->
+</footer>
+
+<div class="tabs"> <!-- Block -->
+  <div class="tabs__tab tabs__tab--active">Descripción</div> <!-- Element + Modifier -->
+  <div class="tabs__tab">Opiniones</div>
+  <div class="tabs__tab">Detalles</div>
+  <div class="tabs__content"> <!-- Element -->
+    <p class="tabs__text">Este producto es excelente...</p> <!-- Element -->
+  </div>
+</div>
+
+<div class="category-selector"> <!-- Block -->
+  <button class="category-selector__button">Tecnología</button> <!-- Element -->
+  <button class="category-selector__button category-selector__button--selected">Hogar</button> <!-- Element + Modifier -->
+  <button class="category-selector__button">Deportes</button>
+</div>
+
+<div class="rating"> <!-- Block -->
+  <span class="rating__star rating__star--filled">★</span> <!-- Element + Modifier -->
+  <span class="rating__star rating__star--filled">★</span>
+  <span class="rating__star rating__star--filled">★</span>
+  <span class="rating__star">★</span>
+  <span class="rating__star">★</span>
+</div>
+
+<div class="video-player"> <!-- Block -->
+  <video class="video-player__video" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video> <!-- Element -->
+  <button class="video-player__button video-player__button--pause">Pause</button> <!-- Element + Modifier -->
+</div>
+
+<aside class="sidebar"> <!-- Block -->
+  <h3 class="sidebar__title">Menú</h3> <!-- Element -->
+  <ul class="sidebar__list"> <!-- Element -->
+    <li class="sidebar__item sidebar__item--active">Inicio</li> <!-- Element + Modifier -->
+    <li class="sidebar__item">Servicios</li>
+    <li class="sidebar__item">Contacto</li>
+  </ul>
+</aside>
+
+<div class="cart-summary"> <!-- Block -->
+  <h4 class="cart-summary__title">Carrito</h4> <!-- Element -->
+  <p class="cart-summary__item">Producto 1 - $10</p> <!-- Element -->
+  <p class="cart-summary__item cart-summary__item--highlight">Total: $10</p> <!-- Element + Modifier -->
+</div>
+
+<article class="blog-post"> <!-- Block -->
+  <h2 class="blog-post__title">Mi viaje a París</h2> <!-- Element -->
+  <p class="blog-post__content">Fue una experiencia increíble...</p> <!-- Element -->
+  <span class="blog-post__tag blog-post__tag--important">Viaje</span> <!-- Element + Modifier -->
+</article>
+
+  </section>
+  <!-- <section> -->
+  <!-- </section> -->
+  <!-- <section>
+  </section> -->
+  
+</body>
+</html>

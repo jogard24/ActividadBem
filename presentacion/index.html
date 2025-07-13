@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Block: Header -->
+  <header class="header">
+    <h1 class="header__logo">Mi Tienda</h1> <!-- Element -->
+    <nav class="header__nav"> <!-- Element -->
+      <a href="#" class="header__link header__link--active">Inicio</a> <!-- Element + Modifier -->
+      <a href="#" class="header__link">Productos</a>
+      <a href="#" class="header__link">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Block: Hero -->
+  <section class="hero">
+    <h2 class="hero__title">Bienvenido a nuestra tienda</h2> <!-- Element -->
+    <p class="hero__text">Ofertas especiales solo por hoy.</p> <!-- Element -->
+  </section>
+
+  <!-- Block: Product List -->
+  <section class="product-list">
+    <div class="product-list__item product-list__item--featured"> <!-- Element + Modifier -->
+      <h3 class="product-list__name">Producto 1</h3> <!-- Element -->
+      <p class="product-list__price">$10</p> <!-- Element -->
+      <button class="product-list__button">Comprar</button> <!-- Element -->
+    </div>
+    <div class="product-list__item">
+      <h3 class="product-list__name">Producto 2</h3>
+      <p class="product-list__price">$20</p>
+      <button class="product-list__button">Comprar</button>
+    </div>
+  </section>
+
+  <!-- Block: Footer -->
+  <footer class="footer">
+    <p class="footer__text">© 2025 Mi Tienda - Todos los derechos reservados.</p> <!-- Element -->
+  </footer>
+
+</body>
+</html>

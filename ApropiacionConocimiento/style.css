@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  /* display: inline-block; */
+  margin: 0 auto;
+  text-align: center;
+}
+/* -------------------------------- */
+/* menu de navegacion */
+
+/* aplicar estilos al bloque "menu" */
+.menu {
+  background-color: #333;
+  padding: 1rem;
+}
+/* estilos para la lista  */
+.menu__list {
+  gap: 2rem;
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+
+/* aplicar posicion a los items "lista" */
+.menu__item {
+  display: inline-block;
+  margin: 0 35px;
+}
+
+/* aplicar estilos a los elementos "link" */
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* modificador */
+.menu__item--active .menu__link {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+/* -------------------------------------- */
+/* tarjeta */
+
+ /* Estilos base para la tarjeta */
+.tarjeta-producto {
+  width: 300px;
+  height: 380px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3.7% auto;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.371);
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Estilos para la imagen de la tarjeta */
+.tarjeta__img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+/* Estilos para el contenido de la tarjeta */
+.tarjeta__contenedor {
+  padding: 15px;
+}
+
+/* Estilos para el título */
+.tarjeta__titulo {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos para la descripción */
+.tarjeta__descripcion {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el botón */
+.tarjeta__button {
+  display: inline-block;
+  padding: 8px 29px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 5% auto;
+}
+
+/* Modificador para un botón secundario */
+.tarjeta__button--destacado {
+  background-color: #6c757d;
+  
+}
+
+/* ---------------------------------- */
+/* formulario de contacto */
+
+/* Estilos al bloque del formulario */
+.contact-form {
+  width: 300px;
+  height: 380px;
+  margin: 3.7% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 15px 15px #3333336e;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.contact-form__group {
+  margin-bottom: 15px;
+}
+
+.contact-form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* importante para que el padding no afecte el ancho */
+}
+
+.contact-form__button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 37%;
+}
+
+.contact-form__button--submit {
+  background-color: #007bff;
+}
+
+/* -------------------------- */
+
+/* lista de tareas */
+
+
+/* estilos al bloque "lista" */
+.lista {
+  width: 300px;
+  height: 380px;
+  margin: 3.7% auto;
+  padding: 10px;
+  box-shadow: 0 15px 15px #3333335e;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+/* estilo al titulo  */
+.lista__titulo{
+  text-align: center;
+  margin: 5%;
+}
+/* estilo a la lista de tareas */
+.lista__tareas {
+  list-style: none;
+  padding: 0;
+}
+
+.lista__items {
+  margin: 10% auto;
+  padding: 0 10px;
+}
+/* estilos botones eliminar */
+.lista__delete-button {
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+}
+
+/* ----------------------- */
+
+/* galeria */
+
+.galeria {
+  width: 300px;
+  height: 370px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+
+}
+
+.galeria__titulo{
+  text-align: center;
+  color: black;
+}
+
+/* -------------------------- */
+/* alerta notificacion */
+
+/* Block */
+.alert {
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Element */
+.alert__message {
+  margin: 0;
+}
+
+/* Modifier */
+.alert--success {
+  border-color: green;
+  background-color: #e0fbe0;
+}
+
+.alert--error {
+  border-color: red;
+  background-color: #fde0e0;
+}
+
+/* -------------------------- */
+
+/* tabla de datos  */
+/* Block */
+.data-table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+/* Element */
+.data-table__header,
+.data-table__cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Modifier */
+.data-table__row--highlighted {
+  background-color: #f0f8ff;
+}
+
+/* -------------------------- */
+
+/* pie de pagina */
+/* Block */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Element */
+.footer__text {
+  margin: 0;
+}
+
+.footer__link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* Modifier */
+.footer__link--important {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* -------------------- */
+
+/* pestañas */
+/* Block */
+.tabs {
+  border: 1px solid #aaa;
+  width: 300px;
+}
+
+/* Element */
+.tabs__tab {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #eee;
+}
+
+.tabs__content {
+  padding: 10px;
+  border-top: 1px solid #aaa;
+}
+
+.tabs__text {
+  margin: 0;
+}
+
+/* Modifier */
+.tabs__tab--active {
+  background: #ddd;
+  font-weight: bold;
+}
+
+/* --------------- */
+
+/* selector de categorias */
+/* Block */
+.category-selector {
+  padding: 5px;
+}
+
+/* Element */
+.category-selector__button {
+  margin: 2px;
+  padding: 5px 10px;
+  background: #f0f0f0;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+/* Modifier */
+.category-selector__button--selected {
+  background: #c0e0ff;
+  border-color: #0055aa;
+}
+
+/* ------------------ */
+
+/* selector calificaciones */
+/* Block */
+.rating {
+  font-size: 20px;
+  color: #ccc;
+}
+
+/* Element */
+.rating__star {
+  cursor: pointer;
+}
+
+/* Modifier */
+.rating__star--filled {
+  color: gold;
+}
+
+
+/* ------------------------ */
+
+/* reproductor de video */
+/* Block */
+.video-player {
+  width: 320px;
+  border: 1px solid #999;
+  padding: 5px;
+}
+
+/* Element */
+.video-player__video {
+  width: 100%;
+}
+
+.video-player__button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/* Modifier */
+.video-player__button--pause {
+  background: #f88;
+}
+
+/* -------------------------- */
+
+/* sidebar */
+/* Block */
+.sidebar {
+  width: 200px;
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+/* Element */
+.sidebar__title {
+  margin: 0 0 10px;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Modifier */
+.sidebar__item--active {
+  background: #ddd;
+  font-weight: bold;
+}
+
+/* -------------------- */
+/* carrito */
+/* Block */
+.cart-summary {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 220px;
+}
+
+/* Element */
+.cart-summary__title {
+  margin-top: 0;
+}
+
+.cart-summary__item {
+  margin: 5px 0;
+}
+
+/* Modifier */
+.cart-summary__item--highlight {
+  font-weight: bold;
+  color: #c00;
+}
+
+/* -------------------------- */
+/* publicacion de blog */
+/* Block */
+.blog-post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Element */
+.blog-post__title {
+  margin: 0 0 5px;
+}
+
+.blog-post__content {
+  margin: 0 0 5px;
+}
+
+.blog-post__tag {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Modifier */
+.blog-post__tag--important {
+  font-weight: bold;
+  color: #900;
+}
+
+
+
